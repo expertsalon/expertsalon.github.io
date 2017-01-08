@@ -1,0 +1,216 @@
+div.body{
+     background-color: white;
+    
+}
+#head{
+	background-color: orange;
+	height: 50px;
+	width: 100%;
+}
+#logo{
+	position: relative;
+   background-color: white;
+	height: 200px;
+	width: 100%;
+
+}
+
+
+ul{
+
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: orange;
+
+}
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 20px;
+	text-decoration: none;
+}
+li a:hover{
+
+background-color: white;
+color: black;
+
+}
+body{
+
+
+	background-color: #F0F3F4;
+}
+img {
+
+width: 100%;
+height: 200px;
+
+}
+#head{
+position: relative;
+margin: 0;
+padding: 0;
+
+}
+i.contact{
+	position: absolute;
+	color:white;
+	right: 30px;
+	margin: 5px;
+
+}
+i.brand{
+   
+	color: white; 
+	margin: 10px;
+}
+i.brand:hover{
+	color: black;
+}
+.logo{
+	position: relative;
+	height: 100%;
+	float: right;
+	width: 20%;
+
+}
+.appointment{
+
+border: 2px solid orange;
+height: 10%;
+margin-left: 110px;
+text-align: center;
+color: black;
+float: left;
+position: absolute;
+top:2%;
+padding: 10px;
+border-radius: 25px;
+background-color: rgba(0,0,0,0.4);
+}
+.appointment:hover{
+color: white;
+background-color: black;
+}
+
+.saloonProduct{
+	float: right;
+	height: 100%;
+	width: 22%;
+	overflow: left;
+}
+.marque{
+height: 100%;
+float: left;
+width: 60%;
+}
+.imgSlide{
+	width: 100%;
+	height: 500PX;
+
+}
+
+#about-left{
+width: 50%;
+float: left;
+}
+#about-right{
+width: 50%;
+float: left;
+}
+
+.makeAppointment{
+	
+	padding: 20px ;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	width: 50%;
+	margin: 0 auto;
+	height: 500px;
+}
+form { 
+margin: 0 auto; 
+width:250px;
+}
+input[type=text] {
+	padding: 10px;
+	font-size: 20px;
+	margin: 10px;
+	width: 200px;
+	height: 20px;
+	border-radius: 10px;
+}
+select{
+	margin: 10px;
+	width: 150px;
+	height: 30px;
+}
+input[type=submit] {
+	padding: 5px;
+	font-size: 20px;
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: rgb(255,178,102);
+	color: black;
+}
+input[type=submit]:hover{
+	background-color: rgb(255,140,0);
+}
+
+
+#location1{
+	width: 40%;
+	float: left;
+    padding: 20px;
+	height: 200px;
+
+}
+#location2{
+	width: 40%;
+	float: left;
+ 	padding: 20px;
+	height: 200px;
+
+}
+#location3{
+	width: 40%;
+	float: left;
+	padding: 20px;
+	height: 200px;
+}
+#location4{
+	width: 40%;
+	float: left;
+	padding: 20px;
+	height: 200px;
+}
+#malePrice{
+	width: 45%;
+	float: left;
+	padding: 20px;
+	height: 600px;
+
+
+}
+#femalePrice{
+    
+ 	width: 48%;
+	float: left;
+	padding: 20px;
+	height: 600px;
+}
+#Franchise{
+	text-align: center;
+	background-color: transparent;
+
+}
