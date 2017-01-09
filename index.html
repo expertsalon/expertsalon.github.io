@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>ExpertSalon</title>
+<link rel="icon" href="images/wella.jpg" type="image/x-icon">
+
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+
+
+</head>
+<body>
+        
+
+        <div id="appointModal" class="modal">
+         <div class="modal-content" style="text-align: center;"> 
+          <span class="close">&times;</span>
+          <h1 style="padding-left: 20px;"><i >Make your appointment </i></h1><br>
+           <form  style="padding-left: 20px; text-align: center;">
+            
+
+             <input type="text" id="name" name="name" placeholder="Name"> <br>
+             <input type="text" id="name" name="name" placeholder="Email"><br>
+             <input type="radio" name="gender" value="male">Male &nbsp;&nbsp;&nbsp;
+             <input type="radio" name="gender" value="female">Female<br>
+             <input type="text" id="phone" name="phone" placeholder="Phone"><br>
+            <select><option value="Monday">Monday</option>
+                                      <option value="Tuesday">Tuesday</option>
+                                       <option value="Wednesday">Wednesday</option>
+                                      <option value="Thursday">Thursday</option>
+                                      <option value="Friday">Friday</option>
+                                      <option value="Saturday">Saturday</option>
+                                      <option value="Sunday">Sunday</option>
+                              </select><br>
+            <select><option value ="10-11">10 am</option>
+             <option value ="10-11">10 am</option>
+             <option value ="11-12">11 am</option>
+             <option value ="12-01">12 Noon</option>
+             <option value ="01-02">1 pm</option>
+             <option value ="02-03">2 pm</option>
+             <option value ="03-04">3 pm</option>
+             <option value ="04-05">4 pm</option>
+             <option value ="05-06">5 pm</option>
+             <option value ="06-07">6 pm</option>
+             <option value ="07-08">7 pm</option>
+             <option value ="08-09">8 pm</option></select><br>
+             <input type="submit" name="submit" value="Submit">
+            
+
+                       
+
+          </form>
+        
+          </div>
+        </div>
+
+
+  <div class="body">
+
+      <div id="head">
+        <div style="float:left; width: 50%; height: 50px;" >
+          <a href="https://google.com"><i  class="fa fa-facebook fa-2x brand"></i></a>
+          <a href="www.google.com"><i  class="fa fa-whatsapp fa-2x brand"></i></a>
+          <a href="www.google.com"><i  class="fa fa-twitter fa-2x brand"></i></a>
+          <a href="www.google.com"><i  class="fa fa-envelope-o fa-2x brand"></i></a>
+       </div>
+        <div style="float:left; width: 50%; height: 50px; ">
+          <i class="fa fa-phone contact" style="font-size:40px; "><span style="font-size: 20px; color: black; padding-left: 10px;"> +1-669-265-7685</span></i>
+        </div>
+        <!-- <div class="expertSalon"><span style="color: white;">Experts Salon</span></div> -->
+
+      </div>
+
+      <div id="logo">
+       <img class="logo" src="images/wella.jpg" alt="wella professional">
+       <div id="chair">
+         <img class="saloonProduct" src="images/hairCut.gif" style="float: left; width: 100%;" alt="wella professional">
+       </div>
+
+       <div class="marque">
+         <marquee behavior="alternate" direction="left">
+           <img src="images/services/1.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/2.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/3.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/5.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/6.png" width="180" height="200" alt="Natural" />
+            <img src="images/services/7.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/8.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/9.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/10.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/11.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/12.png" width="180" height="200" alt="Natural" />
+           <img src="images/services/13.png" width="180" height="200" alt="Natural" />
+        </marquee>
+
+          <div class="appointment" id="makingingAppointment">Book An  <span style="color: red;">Appointment</span></div>
+       </div>
+
+      </div>
+
+      <div id="nav">
+        <nav>
+          <ul>
+          <li ><a  class="navigation navList navSelected" href="javascript:void(0)" onclick="openTab(event, 'img-scroll');">Home</a></li>
+          <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'about');">About</a></li>
+          <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'PriceList');">PriceList</a></li>
+          <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'Franchise');">Franchise</a></li>
+          <li><a  id= "Location"   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'location')">Location</a></li>
+          </ul>
+         </nav>
+      </div>
+
+      <div  id="img-scroll" class="dispalyContent">
+          <img class="mySlides w3-animate-fading imgSlide" src="images/expert1.jpg">
+          <img class="mySlides w3-animate-fading imgSlide" src="images/expert2.jpg">
+          <img class="mySlides w3-animate-fading imgSlide" src="images/expert3.jpg">
+      </div>
+
+
+
+      <div  id="PriceList" class="dispalyContent" style="display:none;">
+         <div id="malePrice">
+           <div style="width: 40%;height: 600px; float: left;">
+           <img  id ="malePriceImg" src="images/male1.jpg">
+           </div>
+           <div style="width: 60%;height: 300px;float: left;">
+           <h2><u>Male</u></h2>
+           </div>
+         </div>
+         <div id="femalePrice">
+           <div style="width: 40%;height: 600px; float: left;">
+           <img  id ="femalePriceImg" src="images/female.jpg">
+           </div>
+           <div style="width: 60%;height: 300px;float: left;">
+           <h2><u>Female</u></h2>
+           </div>
+         </div>
+      </div>
+
+
+      <div  id="location" class="dispalyContent" style="display:none;">
+       
+        <div id="location1">
+         <address>
+           <h3>Noida</h3>
+           <br>Mahagun Mart</address>
+         </div>
+       <div id="location2">
+          <address>
+           <h3>Noida</h3>
+           <br>Mahagun Mart</address>
+       </div>
+       <div id="location3">
+          <address>
+           <h3>Noida</h3>
+           <br>Mahagun Mart</address>
+       </div>
+       <div id="location4">
+          <address>
+           <h3>Noida</h3>
+           <br>Mahagun Mart</address>
+       </div>
+      </div>
+
+
+
+      <div  id="Franchise" class="dispalyContent" style="display:none;">
+         <h1>Be Part of Expert Salon Group</h1>
+      </div>
+
+
+      <div id="about" class="dispalyContent" style="display:none;">
+            <div id="about-left" >
+             <h1 style="padding-left: 20px; ">Be transformed at Expert Salon</h1>
+             <p style="padding-left: 20px; font-size: 20px;">Take a break from reality and relax in our inviting atmosphere. Renew yourself with a fresh new look customized just for you.Our highly trained service providers are more than just stylists, but they embrace an artistic approach to every client they meet with. Our welcoming atmosphere allows for everyone to feel at ease to ensure that they are able to relax for a few hours away from the hustle and bustle of life. Every service is completely customized to your individual needs.Our stylists and skin care providers are always one step ahead than others.
+             <br>Started in year 2014 , we are leading the market now. In just 3 years of time we are the favourite salon in NCR and gradually we are spreading across other cities too.</p><br>
+             <h2 style="padding-left: 20px;"> Coming and experience what you have been missing till now</h2>
+            </div>
+            <div id="about-right"> 
+               <img src="images/about.jpg" style="height: 450px; width: 70%; float: right;padding-right: 20px;">
+            </div>
+      </div>
+
+
+
+   </div>
+     <script type="text/javascript" src="Expert.js"></script>
+     <script type="text/javascript" src="imageDisplay.js"></script>
+</body>
