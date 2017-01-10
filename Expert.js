@@ -36,3 +36,23 @@ tablinks = document.getElementsByClassName("navigation");
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " navSelected";
 }
+
+// document.getElementById("Gallery").onmouseover = function() {mouseOver()};
+// document.getElementById("Gallery").onmouseout = function() {mouseOut()};
+
+// function mouseOver() {
+//     document.getElementById("drop").style.display = 'block';
+// }
+
+// function mouseOut() {
+//     document.getElementById("drop").style.display = "none";
+// }
+
+// setInterval(function(){document.getElementById("head").style.backgroundColor='red';},3000);
+// setInterval(function(){document.getElementById("tab").style.backgroundColor='red';},3000);
+
+// setInterval(function(){document.getElementById("head").style.backgroundColor='orange';},4500);
+// setInterval(function(){document.getElementById("tab").style.backgroundColor='orange';},4500);
+
+
+
