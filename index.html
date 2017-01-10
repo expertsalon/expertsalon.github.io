@@ -61,10 +61,12 @@
 
       <div id="head">
         <div style="float:left; width: 50%; height: 50px;" >
-          <a href="https://google.com"><i  class="fa fa-facebook fa-2x brand"></i></a>
+
+         
           <a href="www.google.com"><i  class="fa fa-whatsapp fa-2x brand"></i></a>
           <a href="www.google.com"><i  class="fa fa-twitter fa-2x brand"></i></a>
           <a href="www.google.com"><i  class="fa fa-envelope-o fa-2x brand"></i></a>
+           <a href=""><i class="fa fa-facebook fa-2x brand"></i></a>
        </div>
         <div style="float:left; width: 50%; height: 50px; ">
           <i class="fa fa-phone contact" style="font-size:40px; "><span style="font-size: 20px; color: black; padding-left: 10px;"> +1-669-265-7685</span></i>
@@ -95,19 +97,38 @@
            <img src="images/services/13.png" width="180" height="200" alt="Natural" />
         </marquee>
 
-          <div class="appointment" id="makingingAppointment">Book An  <span style="color: red;">Appointment</span></div>
+          <div class="appointment tooltip" id="makingingAppointment" >Book An  <span style="color: red;">Appointment</span>
+           <span class="tooltiptext">Get 10% additional discount</span></div>
        </div>
 
       </div>
 
       <div id="nav">
         <nav>
-          <ul>
+          <ul id="tab">
           <li ><a  class="navigation navList navSelected" href="javascript:void(0)" onclick="openTab(event, 'img-scroll');">Home</a></li>
+
           <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'about');">About</a></li>
-          <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'PriceList');">PriceList</a></li>
+
+          <li class="dropdown"><a   class="navigation navList dropbtn" href="javascript:void(0)" >PriceList</a>
+              <div id="drop" class="dropdown-content">
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'malePrice');">Male</a>
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'femalePrice');">Female</a>
+              </div></li>
+
           <li><a   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'Franchise');">Franchise</a></li>
-          <li><a  id= "Location"   class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'location')">Location</a></li>
+
+          <li class="dropdown"><a  id= "Location"   class="navigation navList dropbtn" href="javascript:void(0)">Location</a>
+              <div id="drop" class="dropdown-content">
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'noida');">Noida</a>
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'faridabad');">Faridabad</a>
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'delhi');">Delhi</a>
+              </div></li>
+          <li class="dropdown"><a  id="Gallery" class="navigation navList dropbtn" href="javascript:void(0)" >Gallery</a>
+              <div id="drop" class="dropdown-content">
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'imageGallery');">Image Gallery</a>
+               <a class="navigation navList" href="javascript:void(0)" onclick="openTab(event, 'vedioGallery');">Vedio Gallery</a>
+              </div></li>
           </ul>
          </nav>
       </div>
@@ -120,8 +141,8 @@
 
 
 
-      <div  id="PriceList" class="dispalyContent" style="display:none;">
-         <div id="malePrice">
+    
+         <div id="malePrice" class="dispalyContent" style="display:none;">
            <div style="width: 40%;height: 600px; float: left;">
            <img  id ="malePriceImg" src="images/male1.jpg">
            </div>
@@ -129,7 +150,9 @@
            <h2><u>Male</u></h2>
            </div>
          </div>
-         <div id="femalePrice">
+
+
+         <div id="femalePrice" class="dispalyContent" style="display:none;">
            <div style="width: 40%;height: 600px; float: left;">
            <img  id ="femalePriceImg" src="images/female.jpg">
            </div>
@@ -137,32 +160,67 @@
            <h2><u>Female</u></h2>
            </div>
          </div>
-      </div>
+    
 
 
-      <div  id="location" class="dispalyContent" style="display:none;">
+
        
-        <div id="location1">
-         <address>
+        <div id="noida" class="dispalyContent" style="display:none;">
+        <div class="loc">
+            <a target="_blank" href="images/stores/noida.png">
+                 <img id="locPic" src="images/stores/noida.png" alt="Noida Shop"  height="200">
+            </a>
+            <a target="_blank" href="images/stores/noida.png">
+                 <img id="locPic" src="images/stores/noida.png" alt="Noida Shop" height="200">
+            </a>
+            <a target="_blank" href="images/stores/noida.png">
+                 <img id="locPic" src="images/stores/noida.png" alt="Noida Shop"  height="200">
+            </a>
+        </div>
+        <div class="descloc"><address>
            <h3>Noida</h3>
-           <br>Mahagun Mart</address>
-         </div>
-       <div id="location2">
-          <address>
-           <h3>Noida</h3>
-           <br>Mahagun Mart</address>
+           <br>Shop No:- 20 <br> Lower Ground Floor<br> Mahagun Mart<br> Sector 78  Noida<br> Pin- 201304, Uttar Pradesh</address>
+        </div>
+        </div>
+   
+
+       <div id="faridabad" class="dispalyContent" style="display:none;">
+          <div class="loc">
+            <a target="_blank" href="images/stores/faridabad.png">
+                 <img id="locPic" src="images/stores/faridabad.png" alt="faridabad Shop"  height="200">
+            </a>
+            <a target="_blank" href="images/stores/faridabad.png">
+                 <img id="locPic" src="images/stores/faridabad.png" alt="faridabad Shop" height="200">
+            </a>
+            <a target="_blank" href="images/stores/faridabad.png">
+                 <img id="locPic" src="images/stores/faridabad.png" alt="faridabad Shop"  height="200">
+            </a>
+        </div>
+        <div class="descloc"><address>
+           <h3>FaridaBad</h3>
+           <br>Shop No:- 20 <br> Lower Ground Floor<br> Mahagun Mart<br> Sector 78  Noida<br> Pin- 201304, Uttar Pradesh</address>
+        </div>
        </div>
-       <div id="location3">
-          <address>
-           <h3>Noida</h3>
-           <br>Mahagun Mart</address>
+
+
+       <div id="delhi" class="dispalyContent" style="display:none;">
+          <div class="loc">
+            <a target="_blank" href="images/stores/delhi.png">
+                 <img id="locPic" src="images/stores/delhi.png" alt="delhi Shop"  height="200">
+            </a>
+            <a target="_blank" href="images/stores/delhi.png">
+                 <img id="locPic" src="images/stores/delhi.png" alt="delhi Shop" height="200">
+            </a>
+            <a target="_blank" href="images/stores/delhi.png">
+                 <img id="locPic" src="images/stores/delhi.png" alt="delhi Shop"  height="200">
+            </a>
+        </div>
+        <div class="descloc"><address>
+           <h3>Delhi</h3>
+           <br>Shop No:- 20 <br> Lower Ground Floor<br> Mahagun Mart<br> Sector 78  Noida<br> Pin- 201304, Uttar Pradesh</address>
+        </div>
        </div>
-       <div id="location4">
-          <address>
-           <h3>Noida</h3>
-           <br>Mahagun Mart</address>
-       </div>
-      </div>
+   
 
 
 
@@ -184,8 +242,144 @@
       </div>
 
 
+      <div  id="imageGallery" class="dispalyContent" style="display:none;">
+        <div class="img">
+            <a target="_blank" href="images/services/1.png">
+                 <img id="imgGallery" src="images/services/1.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/2.png">
+                 <img id="imgGallery" src="images/services/2.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/3.png">
+                 <img id="imgGallery" src="images/services/3.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/4.png">
+                 <img id="imgGallery" src="images/services/4.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank" href="images/services/1.png">
+                 <img id="imgGallery" src="images/services/1.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/2.png">
+                 <img id="imgGallery" src="images/services/2.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/3.png">
+                 <img id="imgGallery" src="images/services/3.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/4.png">
+                 <img id="imgGallery" src="images/services/4.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank" href="images/services/1.png">
+                 <img id="imgGallery" src="images/services/1.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/2.png">
+                 <img id="imgGallery" src="images/services/2.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/3.png">
+                 <img id="imgGallery" src="images/services/3.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/4.png">
+                 <img id="imgGallery" src="images/services/4.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/3.png">
+                 <img id="imgGallery" src="images/services/3.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="img">
+            <a target="_blank"  href="images/services/4.png">
+                 <img id="imgGallery" src="images/services/4.png" alt="Salon service" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
 
-   </div>
+      </div>
+
+      
+      <div id="vedioGallery" class="dispalyContent" style="display:none;">   
+        <div class="vedio">
+            <!-- <a target="_blank" href="mergeSort.mp4"> -->
+               <video  width="320" height="240" controls>
+                  <source src="mergeSort.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+               </video>
+               <!-- </a> -->
+              <div class="descVedio">Add a description of the Vedio here</div>
+           </div>  
+
+           <div class="vedio">
+            <!-- <a target="_blank" href="mergeSort.mp4"> -->
+               <video  width="320" height="240" controls>
+                  <source src="mergeSort.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+               </video>
+               <!-- </a> -->
+              <div class="descVedio">Add a description of the Vedio here</div>
+           </div>  
+
+           <div class="vedio">
+            <!-- <a target="_blank" href="mergeSort.mp4"> -->
+               <video  width="320" height="240" controls>
+                  <source src="mergeSort.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+               </video>
+               <!-- </a> -->
+              <div class="descVedio">Add a description of the Vedio here</div>
+           </div>  
+
+           <div class="vedio">
+            <!-- <a target="_blank" href="mergeSort.mp4"> -->
+               <video  width="320" height="240" controls>
+                  <source src="mergeSort.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+               </video>
+               <!-- </a> -->
+              <div class="descVedio">Add a description of the Vedio here</div>
+           </div>  
+      </div>
+
+
+      </div>
+
      <script type="text/javascript" src="Expert.js"></script>
      <script type="text/javascript" src="imageDisplay.js"></script>
 </body>
